@@ -8,7 +8,8 @@
     "spa"
   ],
   "dependencies": {
-    "everblog-adaptor-spa": "^0.1.0"
+    "everblog-adaptor-spa": "^0.1.0",
+    "snyk": "^1.47.0"
   },
   "author": {
     "name": "nswbmw",
@@ -24,5 +25,10 @@
   },
   "bugs": {
     "url": "https://github.com/everblogjs/everblog-theme-spa/issues"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
